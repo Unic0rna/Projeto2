@@ -25,7 +25,7 @@ namespace Projeto2.Controllers
 
             if (usuario != null &&usuario.Senha == senha)
             {
-                return RedirectToAction("Index", "Home");
+                return RedirectToAction("Cadastro", "Produto");
             }
 
             ModelState.AddModelError("", "Email ou senha inválidos.");

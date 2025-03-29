@@ -1,0 +1,61 @@
+﻿body {
+
+}
+
+h2
+{
+    text-align:center;
+    margin-top: 170px;
+    color: #294bd6;
+    cursor: default;
+    margin-bottom: 20px;
+}
+
+input {
+    margin-bottom: 20px;
+    width: 50%;
+    text-align: center;
+    border: 1px solid black;
+    border-radius: 40px;
+}
+
+button {
+    border: 1px solid transparent;
+    padding: 10px;
+    border-radius: 10px;
+    transition: all 0.4s;
+    background: linear-gradient(to bottom left, #5873a7, #5873a7);
+    color: white;
+}
+
+    button:hover {
+        box-shadow: -1px 0px 9px 3px rgba(0,0,0,0.88);
+        background: linear-gradient(to bottom left, #5873a7, #294bd6);
+        transform: scale(1.1);
+        padding-left: 40px;
+        padding-right: 40px;
+        transition: all 0.4s;
+    }
+
+label, input, button {
+    
+    font-size: 25px;
+}
+
+form {
+    background-color: #e5e5e5;
+    text-align: center;
+    width: 60%;
+    margin-left: 20%;
+    border: 4px solid #b9babb;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    border-radius: 20px;
+    transition: all 0.5s;
+}
+
+form:hover
+{
+    transform: scaleY(1.1);
+    margin-top: 50px;
+}
