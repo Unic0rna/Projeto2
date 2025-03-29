@@ -16,3 +16,6 @@ Nome varchar(50) not null,
 Descricao varchar(70) not null,
 Preco decimal(5,2)
 );
+
+select * from Usuario;
+select * from Produto;
