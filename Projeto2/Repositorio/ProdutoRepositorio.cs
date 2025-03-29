@@ -42,7 +42,7 @@ namespace Projeto2.Repositorio
                             Id = reader.GetInt32("Id"),
                             Nome = reader.GetString("Nome"),
                             Descricao = reader.GetString("Descricao"),
-                            Preco = reader.GetInt32("Preco"),
+                            Preco = reader.GetDecimal("Preco"),
                         };
                     }
                 }
