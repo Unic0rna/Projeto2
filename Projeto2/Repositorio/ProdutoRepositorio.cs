@@ -16,7 +16,7 @@ namespace Projeto2.Repositorio
             using (var db = new Conexao(_connectionString))
             {
                 var cmd = db.MySqlCommand();
-                cmd.CommandText = "INSERT INTO Usuario (Nome, Email, Senha) VALUES (@Nome, @Email, @Senha)";
+                cmd.CommandText = "INSERT INTO Produto (Nome, Descricao, Preco) VALUES (@Nome, @Descricao, @Preco)";
                 cmd.Parameters.AddWithValue("@Nome", produto.Nome);
                 cmd.Parameters.AddWithValue("@Descricao", produto.Descricao);
                 cmd.Parameters.AddWithValue("@Preco", produto.Preco);
@@ -42,7 +42,7 @@ namespace Projeto2.Repositorio
                             Id = reader.GetInt32("Id"),
                             Nome = reader.GetString("Nome"),
                             Descricao = reader.GetString("Descricao"),
-                            Preco = reader.GetDecimal("Preco"),
+                            Preco = reader.GetInt32("Preco"),
                         };
                     }
                 }

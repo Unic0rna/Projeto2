@@ -29,7 +29,7 @@ namespace Projeto2.Repositorio
             using (var db = new Conexao(_connectionString))
             {
                 var cmd = db.MySqlCommand();
-                cmd.CommandText = "SELECT * FROM Usuario WHERE Email == @Email";
+                cmd.CommandText = "SELECT * FROM Usuario WHERE Email = @Email";
                 cmd.Parameters.AddWithValue("@Email", email);
                 cmd.ExecuteNonQuery();
 
